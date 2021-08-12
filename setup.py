@@ -1,33 +1,24 @@
+#!/usr/bin/env python3
+
+import os
 from setuptools import setup
 
-version = "1.0.0"
- 
-with open("README.md", "r", encoding="utf-8") as readme_file:
-    long_description = readme_file.read()
+directory = os.path.abspath(os.path.dirname(__file__))
+with open(os.path.join(directory, 'README.md'), encoding='utf-8') as f:
+  long_description = f.read()
 
-setup(
-    name="better-python",
-    version=version,
-    description="Add more functionality to Python",
-    long_description=long_description,
-    long_description_content_type="text/markdown",
-    author="Swas.py",
-    author_email="cwswas.py@gmail.com",
-    py_modules = ['betterpython'],
-    url = "https://github.com/CodeWithSwastik/better-python", 
-    project_urls={
-    "Issue tracker": "https://github.com/CodeWithSwastik/better-python/issues",
-    },
-    classifiers=[
+setup(name='better-python',
+      version='1.0.o',
+      description='Adding for functionality to python.',
+      author='Waqas Islam',
+      license='MIT',
+      long_description=long_description,
+      long_description_content_type='text/markdown',
+      packages = ['betterpython'],
+      classifiers=[
         "Programming Language :: Python :: 3",
-        "Intended Audience :: Developers",
-        "License :: OSI Approved :: MIT License",
-        "Operating System :: OS Independent",
-        "Topic :: Internet",
-        "Topic :: Software Development :: Libraries",
-        "Topic :: Software Development :: Libraries :: Python Modules",
-        "Topic :: Utilities",
-    ],
-    install_requires=['forbiddenfruit'],
-    python_requires=">=3.6",
-)
+        "License :: OSI Approved :: MIT License"
+      ],
+      install_requires=['forbiddenfruit'],
+      python_requires='>=3.6',
+      include_package_data=True)
