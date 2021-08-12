@@ -24,7 +24,7 @@ def __invert__(self):
   return self[::-1]
 ```
 
-### Same example in fprbiddenfruit
+### Same example in forbiddenfruit
 
 ```python
 from forbiddenfruit import curse
@@ -33,15 +33,7 @@ def __invert__(self):
 
 curse(str,'__invert__',__invert__)
 curse(list,'__invert__',__invert__)
-curse(tuple,'__invert__',__invert__)import torch
-
-x = torch.eye(3, requires_grad=True)
-y = torch.tensor([[2.0,0,-2.0]], requires_grad=True)
-z = y.matmul(x).sum()
-z.backward()
-
-print(x.grad)  # dz/dx
-print(y.grad)  # dz/dy
+curse(tuple,'__invert__',__invert__)
 ```
 
 ## Want to modify strings fast?
