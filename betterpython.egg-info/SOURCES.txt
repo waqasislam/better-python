@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+betterpython/Eye.py
+betterpython/__init__.py
+betterpython.egg-info/PKG-INFO
+betterpython.egg-info/SOURCES.txt
+betterpython.egg-info/dependency_links.txt
+betterpython.egg-info/requires.txt
+betterpython.egg-info/top_level.txt

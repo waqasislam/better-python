@@ -7,10 +7,10 @@ directory = os.path.abspath(os.path.dirname(__file__))
 with open(os.path.join(directory, 'README.md'), encoding='utf-8') as f:
   long_description = f.read()
 
-setup(name='better-python',
-      version='1.0.o',
+setup(name='betterpython',
+      version='1.0.0',
       description='Adding for functionality to python.',
-      author='Waqas Islam',
+      author='John Hopkins',
       license='MIT',
       long_description=long_description,
       long_description_content_type='text/markdown',
